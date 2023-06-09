@@ -27,6 +27,7 @@ class CharacterAdapter(private val characterList: List<Character>) : RecyclerVie
 
         holder.binding.tvNombre.text = character.name.toString()
         holder.binding.tvGenero.text = character.gender.toString()
+        //Glide.with(itemView.context).load(image).into(binding.ivPersonaje)
     }
 
     override fun getItemCount(): Int {
